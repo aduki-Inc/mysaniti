@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Components</title>
+    <link rel="stylesheet" href="pro/css/all.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/componets-responsive.css">
+    <link rel="stylesheet" href="css/toggle.css">
+    <link href="http://fonts.cdnfonts.com/css/product-sans" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="site-logo">
+            <h1>MySaniti</h1>
+        </div>
+        <div class="app-name">
+            <h1>Articles & Topics</h1>
+        </div>
+        <div class="notification">
+               <a href="#"><i class="fa-solid fa-bell"></i></a> 
+        </div>
+        <div class="profile-pic" id="profile-dropdown">
+            <label for="toggle"></label>
+            <div class="profile-wrapper">
+                <img src="img/pro.jpg" alt="Profile">
+            </div>
+        </div>
+        <div class="profile-dropdown p-down">
+            <div class="user-profile">
+                <div class="profile-wrapper">
+                    <img src="img/pro.jpg" alt="Profile">
+                </div>
+                <div class="user">
+                    <p class="user-name">Jane Doe</p>
+                    <a href="#" class="view-profile">View Profile<i class="fa-regular fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <hr size="1"/>
+            <a href="#">Dashboard</a>
+            <a href="#">Your Journals</a>
+            <a href="#">Your Work</a>
+            <a href="#">Your Questions</a>
+            <hr size="1"/>
+            <a href="#">Explore</a>
+            <a href="#">What's New?</a>
+            <a href="#">Send Us Feedback</a>
+            <a href="#">Settings</a>
+            <hr size="1"/>
+            <a href="#" class="sign-out">Sign Out</a>
+        </div>
+    </header>
+    <div class="sidebar">
+
+        <ul class="sidebar-list">
+            <li class="active"><a href="#"><i class="fa-solid fa-chart-pie" title="Overview"></i><span
+                        id="sidebar-text"> Overview</span> </a></li>
+            <li><a href="#"><i class="fa-solid fa-compass" title="Discover"></i><span id="sidebar-text">
+                        Discover</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-grid-2" title="Categories"></i><span id="sidebar-text">
+                        Categories</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-memo-pad" title="Topics"></i><span id="sidebar-text">
+                        Topics</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-list-radio" title="My List"></i><span id="sidebar-text"> My
+                        List</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-calendar-lines" title="Articles"></i><span id="sidebar-text">
+                        Articles</span></a></li>
+        </ul>
+        <hr size="1" />
+        <ul class="sidebar-apps">
+            <h2 class="switch">Switch</h2>
+            <li><a href="#"><i class="fa-solid fa-users" title="Spaces"></i><span id="sidebar-text"> Spaces</span></a>
+            </li>
+            <li><a href="#"><i class="fa-solid fa-heart-pulse" title="eTherapy"></i><span id="sidebar-text">
+                        eTharapy</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-seal-question" title="Questions"></i><span id="sidebar-text">
+                        Questions</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-microphone-lines" title="Podcasts"></i><span id="sidebar-text">
+                        Podcasts</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-book-heart" title="Journals"></i><span id="sidebar-text">
+                        Journals</span></a></li>
+        </ul>
+    </div>
+    <aside>
+        <h2 class="related">Most Viewed</h2>
+        <hr size="1">
+        <div class="related-topic">
+
+            <div class="related-details">
+                <p class="topic-category">Mental Health</p>
+                <h3 class="title">This is a related article </h3>
+                <span>By</span><a href="#">Jane Doe</a><span class="dot">&#183</span>
+                <div class="date">10 Jun 2020</div>
+                <i class="fa-solid fa-eye views"> 6.9M</i>
+            </div>
+        </div>
+        <div class="related-topic two">
+
+            <div class="related-details">
+                <p class="topic-category">Society</p>
+                <h3 class="title">This is a related article </h3>
+                <span>By</span><a href="#">Jane Doe</a><span class="dot">&#183</span>
+                <div class="date">10 Jun 2020</div>
+                <i class="fa-solid fa-eye views"> 702k</i>
+            </div>
+        </div>
+        <div class="related-topic three">
+
+            <div class="related-details">
+                <p class="topic-category">Environment</p>
+                <h3 class="title">This is a related article </h3>
+                <span>By</span><a href="#">Jane Doe</a><span class="dot">&#183</span>
+                <div class="date">10 Jun 2020</div>
+                <i class="fa-solid fa-eye views"> 5.3k</i>
+            </div>
+        </div>
+
+    </aside>
+    <main>
+        <div class="blog-wrapper">
+            <div class="blog-contents">
+                <div class="profile-pic">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                </div>
+                <div class="blog-metadata">
+                    <div class="info">
+                        <a href="#" class="user-name">Jane Doe <i class="fa-solid fa-badge-check"></i></a>
+                        <a href="#" class="date">10 Jun 12:44</a>
+                        <span>&#183</span>
+                        <span>12 min read</span>
+                    </div>
+                    <div class="info-action">
+                        <i class="fa-thin fa-pen large-device"> <span id="info-action-text"> Edit</span></i>
+                        <i class="fa-thin fa-paper-plane large-device"> <span id="info-action-text"> Send</span> </i>
+                        <i class="fa-thin fa-bell large-device"> <span id="info-action-text"> Subscribe</span></i>
+                        <i class="fa-solid fa-colon small-device" id="info"> <span id="info-action-text"></span></i>
+                    </div>
+                </div>
+                <div class="info-action" id="info-mobile">
+                    <span id="close">&times;</span>
+                    <i class="fa-thin fa-pen"> <span> Edit</span></i>
+                    <i class="fa-thin fa-paper-plane"> <span> Send</span> </i>
+                    <i class="fa-thin fa-bell"> <span> Subscribe</span></i>
+                </div>
+                <h3 class="blog-title">This is a Topic title</h3>
+                <div class="blog-text">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing nam corrupti exercitationem reiciendis saepe
+                        distinctio inventore sequi! Iste reprehenderit quis eveniet eos
+                        a tenetur cupiditate maiores!.
+                    </p>
+                    <p> Lorem ipsum dolor sit, amets consectetur adipisicing elit. Placeat sint recusandae nam corrupti
+                        exercitationem reiciendis saepe distinctio inventore sequi! Iste reprehenderit quis eveniet eos
+                        tenetur cupiditate maiores! Omnis, nam
+                    </p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci sapiente placeat itaque atque
+                        consectetur adipisicing accusantium tempora at nam?...
+                    </p>
+                    <span class="read-more"><a href="article-full.html">Read More</a></span>
+                </div>
+            </div>
+            <div class="blog-action">
+                <div><span class="span">1.2k</span><i class="fa-thin fa-face-smile-plus"> <span class="reaction-text">
+                            Reaction</span> </i></div>
+                <div><span class="span">39</span><i class="fa-solid fa-thought-bubble"> <span class="reaction-text">
+                            Your Thoughts</span></i></div>
+                <div><span class="span">3</span><i class="fa-thin fa-circle-info"> <span class="reaction-text">
+                            Authors</span> </i>
+                </div>
+            </div>
+            <hr size="1">
+        </div>
+        <div class="blog-wrapper">
+            <div class="blog-contents">
+                <div class="profile-pic">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                </div>
+                <div class="blog-metadata">
+                    <div class="info">
+                        <a href="#" class="user-name">Jane Doe <i class="fa-solid fa-badge-check"></i></a>
+                        <a href="#" class="date">10 Jun 12:44</a>
+                        <span>&#183</span>
+                        <span>12 min read</span>
+                    </div>
+                    <div class="info-action">
+                        <i class="fa-thin fa-pen large-device locked"> <span id="info-action-text"> Edit</span></i>
+                        <i class="fa-thin fa-paper-plane large-device"> <span id="info-action-text"> Send</span> </i>
+                        <i class="fa-thin fa-bell large-device"> <span id="info-action-text"> Subscribe</span></i>
+                        <i class="fa-solid fa-colon small-device" id="info"> <span id="info-action-text"></span></i>
+                    </div>
+                </div>
+                <div class="info-action" id="info-mobile">
+                    <span id="close">&times;</span>
+                    <i class="fa-thin fa-pen"> <span> Edit</span></i>
+                    <i class="fa-thin fa-paper-plane"> <span> Send</span> </i>
+                    <i class="fa-thin fa-bell"> <span> Subscribe</span></i>
+                </div>
+                <h3 class="blog-title">This is a Topic title</h3>
+                <div class="blog-text">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing nam corrupti exercitationem reiciendis saepe
+                        distinctio inventore sequi! Iste reprehenderit quis eveniet eos
+                        a tenetur cupiditate maiores!.
+                    </p>
+                    <p> Lorem ipsum dolor sit, amets consectetur adipisicing elit. Placeat sint recusandae nam corrupti
+                        exercitationem reiciendis saepe distinctio inventore sequi! Iste reprehenderit quis eveniet eos
+                        tenetur cupiditate maiores! Omnis, nam
+                    </p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci sapiente placeat itaque atque
+                        consectetur adipisicing accusantium tempora at nam?...
+                    </p>
+                    <span class="read-more"><a href="article-full.html">Read More</a></span>
+                </div>
+            </div>
+            <div class="blog-action">
+                <div><span class="span">1.2k</span><i class="fa-thin fa-face-smile-plus"> <span class="reaction-text">
+                            Reaction</span> </i></div>
+                <div><span class="span">39</span><i class="fa-solid fa-thought-bubble"> <span class="reaction-text">
+                            Your Thoughts</span></i></div>
+                <div><span class="span">3</span><i class="fa-thin fa-circle-info"> <span class="reaction-text">
+                            Authors</span> </i>
+                </div>
+            </div>
+            <hr size="1">
+        </div>
+        <div class="blog-wrapper">
+            <div class="blog-contents">
+                <div class="profile-pic">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                </div>
+                <div class="blog-metadata">
+                    <div class="info">
+                        <a href="#" class="user-name">Jane Doe <i class="fa-solid fa-badge-check"></i></a>
+                        <a href="#" class="date">10 Jun 12:44</a>
+                        <span>&#183</span>
+                        <span>12 min read</span>
+                    </div>
+                    <div class="info-action">
+                        <i class="fa-thin fa-pen large-device"> <span id="info-action-text"> Edit</span></i>
+                        <i class="fa-thin fa-paper-plane large-device"> <span id="info-action-text"> Send</span> </i>
+                        <i class="fa-thin fa-bell large-device"> <span id="info-action-text"> Subscribe</span></i>
+                        <i class="fa-solid fa-colon small-device" id="info"> <span id="info-action-text"></span></i>
+                    </div>
+                </div>
+                <div class="info-action" id="info-mobile">
+                    <span id="close">&times;</span>
+                    <i class="fa-thin fa-pen"> <span> Edit</span></i>
+                    <i class="fa-thin fa-paper-plane"> <span> Send</span> </i>
+                    <i class="fa-thin fa-bell"> <span> Subscribe</span></i>
+                </div>
+                <h3 class="blog-title">This is a Topic title</h3>
+                <div class="blog-text">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing nam corrupti exercitationem reiciendis saepe
+                        distinctio inventore sequi! Iste reprehenderit quis eveniet eos
+                        a tenetur cupiditate maiores!.
+                    </p>
+                    <p> Lorem ipsum dolor sit, amets consectetur adipisicing elit. Placeat sint recusandae nam corrupti
+                        exercitationem reiciendis saepe distinctio inventore sequi! Iste reprehenderit quis eveniet eos
+                        tenetur cupiditate maiores! Omnis, nam
+                    </p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci sapiente placeat itaque atque
+                        consectetur adipisicing accusantium tempora at nam?...
+                    </p>
+                    <span class="read-more"><a href="article-full.html">Read More</a></span>
+                </div>
+            </div>
+            <div class="blog-action">
+                <div><span class="span">1.2k</span><i class="fa-thin fa-face-smile-plus"> <span class="reaction-text">
+                            Reaction</span> </i></div>
+                <div><span class="span">39</span><i class="fa-solid fa-thought-bubble"> <span class="reaction-text">
+                            Your Thoughts</span></i></div>
+                <div><span class="span">3</span><i class="fa-thin fa-circle-info"> <span class="reaction-text">
+                            Authors</span> </i>
+                </div>
+            </div>
+            <hr size="1">
+        </div>
+        <div class="blog-wrapper">
+            <div class="blog-contents">
+                <div class="profile-pic">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                </div>
+                <div class="blog-metadata">
+                    <div class="info">
+                        <a href="#" class="user-name">Jane Doe <i class="fa-solid fa-badge-check"></i></a>
+                        <a href="#" class="date">10 Jun 12:44</a>
+                        <span>&#183</span>
+                        <span>12 min read</span>
+                    </div>
+                    <div class="info-action">
+                        <i class="fa-thin fa-pen large-device"> <span id="info-action-text"> Edit</span></i>
+                        <i class="fa-thin fa-paper-plane large-device"> <span id="info-action-text"> Send</span> </i>
+                        <i class="fa-thin fa-bell large-device"> <span id="info-action-text"> Subscribe</span></i>
+                        <i class="fa-solid fa-colon small-device" id="info"> <span id="info-action-text"></span></i>
+                    </div>
+                </div>
+                <div class="info-action" id="info-mobile">
+                    <span id="close">&times;</span>
+                    <i class="fa-thin fa-pen"> <span> Edit</span></i>
+                    <i class="fa-thin fa-paper-plane"> <span> Send</span> </i>
+                    <i class="fa-thin fa-bell"> <span> Subscribe</span></i>
+                </div>
+                <h3 class="blog-title">This is a Topic title</h3>
+                <div class="blog-text">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing nam corrupti exercitationem reiciendis saepe
+                        distinctio inventore sequi! Iste reprehenderit quis eveniet eos
+                        a tenetur cupiditate maiores!.
+                    </p>
+                    <p> Lorem ipsum dolor sit, amets consectetur adipisicing elit. Placeat sint recusandae nam corrupti
+                        exercitationem reiciendis saepe distinctio inventore sequi! Iste reprehenderit quis eveniet eos
+                        tenetur cupiditate maiores! Omnis, nam
+                    </p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci sapiente placeat itaque atque
+                        consectetur adipisicing accusantium tempora at nam?...
+                    </p>
+                    <span class="read-more"><a href="article-full.html">Read More</a></span>
+                </div>
+            </div>
+            <div class="blog-action">
+                <div><span class="span">1.2k</span><i class="fa-thin fa-face-smile-plus"> <span class="reaction-text">
+                            Reaction</span> </i></div>
+                <div><span class="span">39</span><i class="fa-solid fa-thought-bubble"> <span class="reaction-text">
+                            Your Thoughts</span></i></div>
+                <div><span class="span">3</span><i class="fa-thin fa-circle-info"> <span class="reaction-text">
+                            Authors</span> </i>
+                </div>
+            </div>
+            <hr size="1">
+        </div>
+        <div class="blog-wrapper">
+            <div class="blog-contents">
+                <div class="profile-pic">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                </div>
+                <div class="blog-metadata">
+                    <div class="info">
+                        <a href="#" class="user-name">Jane Doe <i class="fa-solid fa-badge-check"></i></a>
+                        <a href="#" class="date">10 Jun 12:44</a>
+                        <span>&#183</span>
+                        <span>12 min read</span>
+                    </div>
+                    <div class="info-action">
+                        <i class="fa-thin fa-pen large-device locked"> <span id="info-action-text"> Edit</span></i>
+                        <i class="fa-thin fa-paper-plane large-device"> <span id="info-action-text"> Send</span> </i>
+                        <i class="fa-thin fa-bell large-device"> <span id="info-action-text"> Subscribe</span></i>
+                        <i class="fa-solid fa-colon small-device" id="info"> <span id="info-action-text"></span></i>
+                    </div>
+                </div>
+                <div class="info-action" id="info-mobile">
+                    <span id="close">&times;</span>
+                    <i class="fa-thin fa-pen"> <span> Edit</span></i>
+                    <i class="fa-thin fa-paper-plane"> <span> Send</span> </i>
+                    <i class="fa-thin fa-bell"> <span> Subscribe</span></i>
+                </div>
+                <h3 class="blog-title">This is a Topic title</h3>
+                <div class="blog-text">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing nam corrupti exercitationem reiciendis saepe
+                        distinctio inventore sequi! Iste reprehenderit quis eveniet eos
+                        a tenetur cupiditate maiores!.
+                    </p>
+                    <p> Lorem ipsum dolor sit, amets consectetur adipisicing elit. Placeat sint recusandae nam corrupti
+                        exercitationem reiciendis saepe distinctio inventore sequi! Iste reprehenderit quis eveniet eos
+                        tenetur cupiditate maiores! Omnis, nam
+                    </p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci sapiente placeat itaque atque
+                        consectetur adipisicing accusantium tempora at nam?...
+                    </p>
+                    <span class="read-more"><a href="article-full.html">Read More</a></span>
+                </div>
+            </div>
+            <div class="blog-action">
+                <div><span class="span">1.2k</span><i class="fa-thin fa-face-smile-plus"> <span class="reaction-text">
+                            Reaction</span> </i></div>
+                <div><span class="span">39</span><i class="fa-solid fa-thought-bubble"> <span class="reaction-text">
+                            Your Thoughts</span></i></div>
+                <div><span class="span">3</span><i class="fa-thin fa-circle-info"> <span class="reaction-text">
+                            Authors</span> </i>
+                </div>
+            </div>
+            <hr size="1">
+        </div>
+        <div class="blog-wrapper">
+            <div class="blog-contents">
+                <div class="profile-pic">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                </div>
+                <div class="blog-metadata">
+                    <div class="info">
+                        <a href="#" class="user-name">Jane Doe <i class="fa-solid fa-badge-check"></i></a>
+                        <a href="#" class="date">10 Jun 12:44</a>
+                        <span>&#183</span>
+                        <span>12 min read</span>
+                    </div>
+                    <div class="info-action">
+                        <i class="fa-thin fa-pen large-device"> <span id="info-action-text"> Edit</span></i>
+                        <i class="fa-thin fa-paper-plane large-device"> <span id="info-action-text"> Send</span> </i>
+                        <i class="fa-thin fa-bell large-device"> <span id="info-action-text"> Subscribe</span></i>
+                        <i class="fa-solid fa-colon small-device" id="info"> <span id="info-action-text"></span></i>
+                    </div>
+                </div>
+                <div class="info-action" id="info-mobile">
+                    <span id="close">&times;</span>
+                    <i class="fa-thin fa-pen"> <span> Edit</span></i>
+                    <i class="fa-thin fa-paper-plane"> <span> Send</span> </i>
+                    <i class="fa-thin fa-bell"> <span> Subscribe</span></i>
+                </div>
+                <h3 class="blog-title">This is a Topic title</h3>
+                <div class="blog-text">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing nam corrupti exercitationem reiciendis saepe
+                        distinctio inventore sequi! Iste reprehenderit quis eveniet eos
+                        a tenetur cupiditate maiores!.
+                    </p>
+                    <p> Lorem ipsum dolor sit, amets consectetur adipisicing elit. Placeat sint recusandae nam corrupti
+                        exercitationem reiciendis saepe distinctio inventore sequi! Iste reprehenderit quis eveniet eos
+                        tenetur cupiditate maiores! Omnis, nam
+                    </p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci sapiente placeat itaque atque
+                        consectetur adipisicing accusantium tempora at nam?...
+                    </p>
+                    <span class="read-more"><a href="article-full.html">Read More</a></span>
+                </div>
+            </div>
+            <div class="blog-action">
+                <div><span class="span">1.2k</span><i class="fa-thin fa-face-smile-plus"> <span class="reaction-text">
+                            Reaction</span> </i></div>
+                <div><span class="span">39</span><i class="fa-solid fa-thought-bubble"> <span class="reaction-text">
+                            Your Thoughts</span></i></div>
+                <div><span class="span">3</span><i class="fa-thin fa-circle-info"> <span class="reaction-text">
+                            Authors</span> </i>
+                </div>
+            </div>
+            <hr size="1">
+        </div>
+        <div class="blog-wrapper">
+            <div class="blog-contents">
+                <div class="profile-pic">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                </div>
+                <div class="blog-metadata">
+                    <div class="info">
+                        <a href="#" class="user-name">Jane Doe <i class="fa-solid fa-badge-check"></i></a>
+                        <a href="#" class="date">10 Jun 12:44</a>
+                        <span>&#183</span>
+                        <span>12 min read</span>
+                    </div>
+                    <div class="info-action">
+                        <i class="fa-thin fa-pen large-device locked"> <span id="info-action-text"> Edit</span></i>
+                        <i class="fa-thin fa-paper-plane large-device"> <span id="info-action-text"> Send</span> </i>
+                        <i class="fa-thin fa-bell large-device"> <span id="info-action-text"> Subscribe</span></i>
+                        <i class="fa-solid fa-colon small-device" id="info"> <span id="info-action-text"></span></i>
+                    </div>
+                </div>
+                <div class="info-action" id="info-mobile">
+                    <span id="close">&times;</span>
+                    <i class="fa-thin fa-pen"> <span> Edit</span></i>
+                    <i class="fa-thin fa-paper-plane"> <span> Send</span> </i>
+                    <i class="fa-thin fa-bell"> <span> Subscribe</span></i>
+                </div>
+                <h3 class="blog-title">This is a Topic title</h3>
+                <div class="blog-text">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing nam corrupti exercitationem reiciendis saepe
+                        distinctio inventore sequi! Iste reprehenderit quis eveniet eos
+                        a tenetur cupiditate maiores!.
+                    </p>
+                    <p> Lorem ipsum dolor sit, amets consectetur adipisicing elit. Placeat sint recusandae nam corrupti
+                        exercitationem reiciendis saepe distinctio inventore sequi! Iste reprehenderit quis eveniet eos
+                        tenetur cupiditate maiores! Omnis, nam
+                    </p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci sapiente placeat itaque atque
+                        consectetur adipisicing accusantium tempora at nam?...
+                    </p>
+                    <span class="read-more"><a href="article-full.html">Read More</a></span>
+                </div>
+            </div>
+            <div class="blog-action">
+                <div><span class="span">1.2k</span><i class="fa-thin fa-face-smile-plus"> <span class="reaction-text">
+                            Reaction</span> </i></div>
+                <div><span class="span">39</span><i class="fa-solid fa-thought-bubble"> <span class="reaction-text">
+                            Your Thoughts</span></i></div>
+                <div><span class="span">3</span><i class="fa-thin fa-circle-info"> <span class="reaction-text">
+                            Authors</span> </i>
+                </div>
+            </div>
+            <hr size="1">
+        </div>
+    </main>
+    <div class="aside">
+        <div class="user-profile">
+            <div class="profile-wrapper">
+                <img src="img/pro.jpg" alt="Profile">
+            </div>
+            <div class="user">
+                <p class="user-name">Jane Doe</p>
+                <a href="#" class="view-profile">View Profile<i class="fa-regular fa-arrow-right-long"></i></a>
+            </div>
+        </div>
+        <hr size="1" />
+        <ul class="mobile-nav-list">
+            <li><a href="#"><i class="fa-solid fa-grid-2" title="Categories"></i><span id="sidebar-text">
+                        Categories</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-memo-pad" title="Topics"></i><span id="sidebar-text">
+                        Topics</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-list-radio" title="My List"></i><span id="sidebar-text"> My
+                        List</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-calendar-lines" title="Articles"></i><span id="sidebar-text">
+                        Articles</span></a></li>
+        </ul>
+        <ul class="mobile-apps">
+            <h4 class="switch-app">Service Dashboard</h4>
+            <li class="active">
+                <a href="#" class="current">
+                    <i class="fa-solid fa-chart-pie"></i><span>Overview</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-regular fa-user-group"></i><span>Spaces</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-heart-pulse"></i><span>eTharapy</span>
+                </a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-solid fa-seal-question"></i><span>Questions</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-circle-microphone-lines"></i><span>Podcasts</span>
+                </a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-regular fa-gear"></i><span>Settings</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <div class="footer-icon onee">
+            <i class="fa-solid fa-compass "></i>
+            <span class="icon-name">Overview</span>
+        </div>
+        <div class="footer-icon create">
+            <i class="fa-solid fa-circle-plus" id="create"></i>
+            <span class="icon-name">Create</spa>
+        </div>
+
+        <div class="footer-icon mysaniti">
+            <label for="toggle"><i class="fa-regular fa-spa spaa"></i></label>
+            <input type="checkbox" id="toggle">
+            <!-- <i class="fa-regular fa-spa"></i>-->
+            <span class="icon-name">MySaniti</span>
+        </div>
+    </footer>
+    <div class="create-post-modal">
+        <span class="close">&times;</span>
+        <p class="create-type">CHOOSE TYPE:</p>
+        <a href="#" class="first">
+            <i class="fa-solid fa-file-plus"></i>
+            <span id="sidebar-text ">Create an article</span>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-circle-question"></i>
+            <span id="sidebar-text">Ask a question</span>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-microphone-lines"></i>
+            <span id="sidebar-text">Add a podcast</span>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-book-user"></i>
+            <span id="sidebar-text">Create a journal</span>
+        </a>
+    </div>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
