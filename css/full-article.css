@@ -12,10 +12,10 @@ header {
     /* background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);*/
     background: linear-gradient(90deg, #e3ffe7 0%, #eff1f3 100%);
     /* background-image:  url("img/header1.gif");*/
-
     position: fixed;
     top: 0%;
     left: 0%;
+    right: 0%;
     height: 50px;
     width: 100%;
     /*background-color: rgb(255, 255, 255);*/
@@ -847,8 +847,12 @@ header>.profile-dropdown{
 
     }
     @media screen and (max-width: 550px){
-       header>.app-name h1{
-            font-size: 18px;
+        header{
+            position: fixed;
+            top: 0%;
+            right: 0%;
+            left: 0%;
+            height: 50px;
         }
         .sidebar{
             display: none;
