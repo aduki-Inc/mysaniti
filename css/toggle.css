@@ -6,150 +6,171 @@
         padding-left: 10px;
         color: #557997;
     }
-    header>#profile-dropdown{
-     /*   border: 1px solid #ff002b;*/
+
+    header>#profile-dropdown {
+        /*   border: 1px solid #ff002b;*/
         cursor: pointer;
         padding: 0%;
         margin: 0%;
         margin-top: 5px;
     }
-    #profile-dropdown>.profile-wrapper{
+
+    #profile-dropdown>.profile-wrapper {
         padding: 3%;
         width: 33px;
         height: 33px;
 
     }
-    #profile-dropdown>.profile-wrapper img{
+
+    #profile-dropdown>.profile-wrapper img {
         width: 88%;
         height: 88%;
     }
-    header>.profile-dropdown{
+
+    header>.profile-dropdown {
         position: absolute;
         box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-        border: 1px solid  #5579973a;
+        border: 1px solid #5579973a;
         box-sizing: border-box;
         padding-bottom: 8px;
         padding-top: 10px;
         right: 15px;
         width: 200px;
-        top: 50px;/* correct this line*/
+        top: 50px;
+        /* correct this line*/
         z-index: 1;
         background-color: white;
         display: none;
         flex-flow: column;
         justify-content: space-between;
     }
-    .profile-dropdown>a{
+
+    .profile-dropdown>a {
         text-decoration: none;
         font-size: 16px;
         color: #557997;
-      /*  border: 1px solid #ff002b;*/
+        /*  border: 1px solid #ff002b;*/
         box-sizing: border-box;
         margin: 5px 35px;
         width: max-content;
     }
-    .profile-dropdown>a:hover{
+
+    .profile-dropdown>a:hover {
         color: #008cff;
     }
-    .profile-dropdown>hr{
+
+    .profile-dropdown>hr {
         margin-top: 5px;
         margin-bottom: 5px;
     }
-    .profile-dropdown>.user-profile{
+
+    .profile-dropdown>.user-profile {
         /* border: 1px solid brown;*/
-            display: flex;
-            padding-left: 15px;
-            margin-bottom: 5px;
-            gap: 10px;
-        }
-        .profile-dropdown>.user-profile .user{
-          /*  border: 1px solid brown;*/
-            width: max-content;
-            margin-top: 2px;
-        }
-        .user-profile>.user p{
-          /*  border: 1px solid brown;*/
-            font-size: 18px;
-            margin: 0%;
-        }
-        .user-profile>.user a{
-            text-decoration: none;
-           /* border: 1px solid rgb(42, 151, 165);*/
-            color: rgba(0, 0, 0, 0.63);
-            padding-left: 10px;
-            display: inline-block;
-            font-size: 0.9em;
-    
-        }
-        .user-profile>.user a:hover{
-            color: rgb(0, 0, 0);
-            box-sizing: border-box;
-           /* border: 1px solid brown;*/
-        }
-        .user>a i:hover{
-            box-sizing: border-box;
-            margin-left: 10px;
-        }
-        .user>a i{
-            display: inline-block;
-            margin-left: 5px;
-           /* border: 1px solid brown;*/
-        }
-        .profile-dropdown>.user-profile .profile-wrapper{
-            width: 35px;
-            height: 35px;
-           border: 1px solid rgba(42, 120, 165, 0.438);
-            padding-top: 3px;
-            box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-            padding-left: 3px;
-            border-radius: 50px;
-            -webkit-border-radius: 50px;
-            -moz-border-radius: 50px;
-            -ms-border-radius: 50px;
-            -o-border-radius: 50px;
+        display: flex;
+        padding-left: 15px;
+        margin-bottom: 5px;
+        gap: 10px;
     }
-        .user-profile>.profile-wrapper img{
-            width: 92%;
-            height: 92%;
-            object-fit: cover;
-            border-radius: 50px;
-        }
-        .profile-dropdown>.sign-out{
-            color: rgba(255, 81, 0, 0.863);
-        }
-    
-        header>.notification{
-           /* border: 1px solid brown;*/
-           margin-right: auto;
-           margin-top: 5px;
-            box-sizing: border-box;
-            height: fit-content;
-            text-align: center;
-            border-radius: 50px;
-            -webkit-border-radius: 50px;
-            -moz-border-radius: 50px;
-            -ms-border-radius: 50px;
-            -o-border-radius: 50px;
-    
+
+    .profile-dropdown>.user-profile .user {
+        /*  border: 1px solid brown;*/
+        width: max-content;
+        margin-top: 2px;
     }
-        .notification>a{
-            box-sizing: border-box;
-            font-size: 22px;
-            width: 100%;
-            color: #557997;
-            cursor: pointer;
-        }
-        .notification>a:hover{
-            color: #008cff;
-        }
-        main{
-            margin-top: 60px;
-        }
-    
+
+    .user-profile>.user p {
+        /*  border: 1px solid brown;*/
+        font-size: 18px;
+        margin: 0%;
+    }
+
+    .user-profile>.user a {
+        text-decoration: none;
+        /* border: 1px solid rgb(42, 151, 165);*/
+        color: rgba(0, 0, 0, 0.63);
+        padding-left: 10px;
+        display: inline-block;
+        font-size: 0.9em;
+
+    }
+
+    .user-profile>.user a:hover {
+        color: rgb(0, 0, 0);
+        box-sizing: border-box;
+        /* border: 1px solid brown;*/
+    }
+
+    .user>a i:hover {
+        box-sizing: border-box;
+        margin-left: 10px;
+    }
+
+    .user>a i {
+        display: inline-block;
+        margin-left: 5px;
+        /* border: 1px solid brown;*/
+    }
+
+    .profile-dropdown>.user-profile .profile-wrapper {
+        width: 35px;
+        height: 35px;
+        border: 1px solid rgba(42, 120, 165, 0.438);
+        padding-top: 3px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        padding-left: 3px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+
+    .user-profile>.profile-wrapper img {
+        width: 92%;
+        height: 92%;
+        object-fit: cover;
+        border-radius: 50px;
+    }
+
+    .profile-dropdown>.sign-out {
+        color: rgba(255, 81, 0, 0.863);
+    }
+
+    header>.notification {
+        /* border: 1px solid brown;*/
+        margin-right: auto;
+        margin-top: 5px;
+        box-sizing: border-box;
+        height: fit-content;
+        text-align: center;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+
+    }
+
+    .notification>a {
+        box-sizing: border-box;
+        font-size: 22px;
+        width: 100%;
+        color: #557997;
+        cursor: pointer;
+    }
+
+    .notification>a:hover {
+        color: #008cff;
+    }
+
+    main {
+        margin-top: 60px;
+    }
+
     /* || Checkbox hack to control information box display */
 
     label[for="toggle"] {
-      /*  font-size: 1.5rem;
+        /*  font-size: 1.5rem;
        position: fixed;
         bottom: 18px;
         right: 8px;*/
@@ -158,9 +179,10 @@
     }
 
     input[type="checkbox"] {
-       position: absolute;
+        position: absolute;
         right: -100px;
     }
+
     label[for="toggle"]>i:hover {
         color: #df8a0afb;
     }
@@ -185,144 +207,169 @@
         -ms-transition: 0.6s all;
         -o-transition: 0.6s all;
     }
-    .aside>.user-profile{
-    /*    border: 1px solid brown;*/
+
+    .aside>.user-profile {
+        /*    border: 1px solid brown;*/
         display: flex;
         padding-left: 5px;
         margin-bottom: 5px;
         gap: 10px;
     }
-    .aside>.user-profile .user{
-      /*  border: 1px solid brown;*/
+
+    .aside>.user-profile .user {
+        /*  border: 1px solid brown;*/
         width: max-content;
         margin-top: 2px;
     }
-    .user-profile>.user p{
-      /*  border: 1px solid brown;*/
+
+    .user-profile>.user p {
+        /*  border: 1px solid brown;*/
         font-size: 18px;
         margin: 0%;
     }
-    .user-profile>.user a{
+
+    .user-profile>.user a {
         text-decoration: none;
-       /* border: 1px solid rgb(42, 151, 165);*/
+        /* border: 1px solid rgb(42, 151, 165);*/
         color: rgba(0, 0, 0, 0.63);
         padding-left: 10px;
         display: inline-block;
         font-size: 0.9em;
 
     }
-    .user-profile>.user a:hover{
+
+    .user-profile>.user a:hover {
         color: rgb(0, 0, 0);
         box-sizing: border-box;
-       /* border: 1px solid brown;*/
+        /* border: 1px solid brown;*/
     }
-    .user>a i:hover{
+
+    .user>a i:hover {
         box-sizing: border-box;
         margin-left: 10px;
     }
-    .user>a i{
+
+    .user>a i {
         display: inline-block;
         margin-left: 5px;
-       /* border: 1px solid brown;*/
+        /* border: 1px solid brown;*/
     }
-    .aside>.user-profile .profile-wrapper{
+
+    .aside>.user-profile .profile-wrapper {
         width: 35px;
         height: 35px;
-       border: 1px solid rgba(42, 120, 165, 0.438);
-        padding-top: 3px;box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(42, 120, 165, 0.438);
+        padding-top: 3px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
         padding-left: 3px;
         border-radius: 50px;
         -webkit-border-radius: 50px;
         -moz-border-radius: 50px;
         -ms-border-radius: 50px;
         -o-border-radius: 50px;
-}
-    .user-profile>.profile-wrapper img{
+    }
+
+    .user-profile>.profile-wrapper img {
         width: 92%;
         height: 92%;
         object-fit: cover;
         border-radius: 50px;
     }
-    .aside>hr{
+
+    .aside>hr {
         width: 100%;
         margin: 0%;
     }
-    .aside>.mobile-nav-list{
-       /* border: 1px solid brown;*/
+
+    .aside>.mobile-nav-list {
+        /* border: 1px solid brown;*/
         padding: 0%;
     }
-    .aside>.mobile-nav-list li{
+
+    .aside>.mobile-nav-list li {
         list-style: none;
         padding-left: 40px;
-      /*  border: 1px solid brown;*/
+        /*  border: 1px solid brown;*/
         margin-bottom: 8px;
     }
-    .mobile-nav-list>li a{
+
+    .mobile-nav-list>li a {
         text-decoration: none;
         color: rgb(4, 34, 51);
         opacity: .7;
         font-size: 1.1em;
     }
-    .mobile-nav-list>li i{
+
+    .mobile-nav-list>li i {
         display: inline-block;
         margin-right: 10px;
         font-size: 1.0em;
-      /*  border: 1px solid brown;*/
+        /*  border: 1px solid brown;*/
         color: inherit;
     }
-    .mobile-nav-list>li a:hover{
-       /* color: rgb(7, 76, 104);*/
+
+    .mobile-nav-list>li a:hover {
+        /* color: rgb(7, 76, 104);*/
         color: rgb(6, 90, 83);
         opacity: 1.0;
     }
+
     /*Switch Service/App */
-    .aside>.mobile-apps .switch-app{
-     /* border: 1px solid brown;*/
+    .aside>.mobile-apps .switch-app {
+        /* border: 1px solid brown;*/
         margin: 0%;
         margin-top: 4px;
         margin-bottom: 8px;
         padding-left: 40px;
         opacity: .6;
     }
-    .aside>.mobile-apps{
-       /* border: 1px solid brown;*/
+
+    .aside>.mobile-apps {
+        /* border: 1px solid brown;*/
         padding: 0%;
     }
-    .aside>.mobile-apps li{
+
+    .aside>.mobile-apps li {
         list-style: none;
         box-sizing: border-box;
         padding: 5px 2px;
         padding-left: 40px;
         margin-bottom: 5px;
         font-size: 1.2em;
-       /* border: 1px solid brown;*/
+        /* border: 1px solid brown;*/
     }
-    .mobile-apps>li a{
+
+    .mobile-apps>li a {
         text-decoration: none;
         color: rgb(4, 34, 51);
         opacity: .7;
     }
-    .mobile-apps>li .current{
+
+    .mobile-apps>li .current {
         color: rgb(4, 102, 89);
     }
-    .mobile-apps>li a:hover{
+
+    .mobile-apps>li a:hover {
         text-decoration: none;
         color: rgb(4, 102, 89);
         opacity: .7;
     }
-    .mobile-apps>.active{
-         background-color: #55799725;
+
+    .mobile-apps>.active {
+        background-color: #55799725;
 
     }
-    .mobile-apps>li i{
+
+    .mobile-apps>li i {
         display: inline-block;
         font-size: 1.0em;
         margin-right: 10px;
-      /*  border: 1px solid brown;*/
+        /*  border: 1px solid brown;*/
         color: inherit;
     }
+
     /* CREATE POST MODAL */
-    .create-post-modal{
+    .create-post-modal {
         position: fixed;
         box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
         bottom: 60px;
@@ -335,8 +382,9 @@
         align-items: center;
         padding-bottom: 30px;
     }
-    .create-post-modal>.create-type{
-    /* border: 1px solid brown;*/
+
+    .create-post-modal>.create-type {
+        /* border: 1px solid brown;*/
         margin: 0%;
         margin-top: 5px;
         margin-bottom: 10px;
@@ -347,7 +395,8 @@
         color: #33414dc0;
         opacity: .6;
     }
-    .create-post-modal>a{
+
+    .create-post-modal>a {
         text-decoration: none;
         border: 1px solid rgba(7, 70, 64, 0.11);
         margin-bottom: 5px;
@@ -363,25 +412,30 @@
         -ms-border-radius: 50px;
         -o-border-radius: 50px;
     }
-    .create-post-modal>.first{
+
+    .create-post-modal>.first {
         margin-top: 40px;
     }
-    .create-post-modal>a:hover{
+
+    .create-post-modal>a:hover {
         background-color: #33414d11;
     }
-    .create-post-modal>a i{
-       /* border: 1px solid brown;*/
+
+    .create-post-modal>a i {
+        /* border: 1px solid brown;*/
         display: inline-block;
         width: 30px;
         margin-right: 10px;
         font-size: 1.5em;
         color: rgba(6, 90, 83, 0.63);
     }
-    .create-post-modal>a span{
-      /*  border: 1px solid brown;*/
+
+    .create-post-modal>a span {
+        /*  border: 1px solid brown;*/
         color: #33414dc0;
         font-size: 1.2em;
     }
+
     /* The Close Button */
     .close {
         color: #aaaaaa;
@@ -390,6 +444,7 @@
         font-size: 30px;
         font-weight: bold;
     }
+
     .close:hover,
     .close:focus {
         color: rgba(185, 11, 11, 0.507);
@@ -400,6 +455,7 @@
 }
 
 @media screen and (min-width: 500px) {
+
     label[for='toggle'],
     .aside,
     .create-post-modal,

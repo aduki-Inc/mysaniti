@@ -75,15 +75,15 @@ span.addEventListener('click', function () {
 // OPening & Closing Profile dropdown
 function dropdown() {
     if (remove === false) {
-            profileModal.style.setProperty('display', 'flex');
-            remove = true;
-        }
-        else{
-            profileModal.style.setProperty('display', 'none');
-            remove = false;
-        };
+        profileModal.style.setProperty('display', 'flex');
+        remove = true;
     }
-profileBtn.addEventListener('click',dropdown);
+    else {
+        profileModal.style.setProperty('display', 'none');
+        remove = false;
+    };
+}
+profileBtn.addEventListener('click', dropdown);
 
 
 // When the user clicks anywhere outside of the modal, close it

@@ -155,21 +155,23 @@ input[type="submit"]:hover {
     margin-left: 5px;
     text-decoration: none;
 }
+
 /* Mobile Phones */
 @media all and (max-width: 500px) {
-    .login-box{
-       width: 100%;
-       height: 600px;
-       margin: 0%;
-       background-color: #09be3cd3;
-       border-radius: unset;
-       -webkit-border-radius: unset;
-       -moz-border-radius: unset;
-       -ms-border-radius: unset;
-       -o-border-radius: unset;
-}
-    body{
-      /*  background-image: url('background/background.jpg');
+    .login-box {
+        width: 100%;
+        height: 600px;
+        margin: 0%;
+        background-color: #09be3cd3;
+        border-radius: unset;
+        -webkit-border-radius: unset;
+        -moz-border-radius: unset;
+        -ms-border-radius: unset;
+        -o-border-radius: unset;
+    }
+
+    body {
+        /*  background-image: url('background/background.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 0%;
