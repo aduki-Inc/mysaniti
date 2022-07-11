@@ -548,7 +548,7 @@ main {
     padding: 2px;
     align-self: center;
     position: sticky;
-    bottom: 70px;
+    bottom: 75px;
     display: flex;
     /*  flex-flow: column;*/
     align-items: center;

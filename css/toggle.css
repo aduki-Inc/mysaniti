@@ -67,7 +67,7 @@
     }
 
     .profile-dropdown>a:hover {
-        color: #008cff;
+        color: var(--accent-color);
     }
 
     .profile-dropdown>hr {
@@ -369,7 +369,7 @@
         font-size: 1.0em;
         margin-right: 10px;
         /*  border: 1px solid brown;*/
-        color: inherit;
+        color: var(--accent-color);
     }
 
     /* CREATE POST MODAL */
