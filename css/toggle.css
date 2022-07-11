@@ -1,10 +1,21 @@
+:root{
+    --accent-color:  #08ac7b;
+    --title-color: #08ac90c7;
+    --background-color: white;
+    --link-color: rgb(6, 153, 128);
+    --normal-opacity-color: rgba(0, 0, 0, 0.767);
+    --button-background-color: #07aa74;
+    --button-text-color: white;
+    --border-color: rgba(5, 230, 143, 0.233);
+}
+
 @media screen and (max-width: 500px) {
     header>.app-name h1 {
         align-self: center;
         font-size: 1.3em;
         text-align: left;
         padding-left: 10px;
-        color: #557997;
+        color: var(--accent-color);
     }
 
     header>#profile-dropdown {
@@ -155,17 +166,10 @@
         box-sizing: border-box;
         font-size: 22px;
         width: 100%;
-        color: #557997;
+        color: var(--accent-color);
         cursor: pointer;
     }
 
-    .notification>a:hover {
-        color: #008cff;
-    }
-
-    main {
-        margin-top: 60px;
-    }
 
     /* || Checkbox hack to control information box display */
 
@@ -258,9 +262,9 @@
     .aside>.user-profile .profile-wrapper {
         width: 35px;
         height: 35px;
-        border: 1px solid rgba(42, 120, 165, 0.438);
+        border: 1px solid var(--border-color);
         padding-top: 3px;
-        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
         padding-left: 3px;
         border-radius: 50px;
         -webkit-border-radius: 50px;
@@ -371,11 +375,11 @@
     /* CREATE POST MODAL */
     .create-post-modal {
         position: fixed;
-        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
         bottom: 60px;
         padding-bottom: 10px;
         width: 100%;
-        background-color: white;
+        background-color: var(--background-color);
         display: none;
         flex-flow: column;
         justify-content: space-between;
@@ -383,22 +387,9 @@
         padding-bottom: 30px;
     }
 
-    .create-post-modal>.create-type {
-        /* border: 1px solid brown;*/
-        margin: 0%;
-        margin-top: 5px;
-        margin-bottom: 10px;
-        position: absolute;
-        left: 20px;
-        font-size: 16px;
-        font-weight: bold;
-        color: #33414dc0;
-        opacity: .6;
-    }
-
     .create-post-modal>a {
         text-decoration: none;
-        border: 1px solid rgba(7, 70, 64, 0.11);
+        border: 1px solid var(--border-color);
         margin-bottom: 5px;
         width: 70%;
         margin: 5px 0px;
@@ -427,29 +418,29 @@
         width: 30px;
         margin-right: 10px;
         font-size: 1.5em;
-        color: rgba(6, 90, 83, 0.63);
+        color: var(--accent-color);
     }
 
     .create-post-modal>a span {
         /*  border: 1px solid brown;*/
-        color: #33414dc0;
-        font-size: 1.2em;
+        color: var(--normal-opacity-color);
+        font-size: 1.3em;
     }
 
     /* The Close Button */
-    .close {
-        color: #aaaaaa;
+    .create-post-modal>.close {
+        color: var(--accent-color);
         position: absolute;
         right: 10px;
         font-size: 30px;
         font-weight: bold;
+        cursor: pointer;
     }
 
     .close:hover,
     .close:focus {
         color: rgba(185, 11, 11, 0.507);
         text-decoration: none;
-        cursor: pointer;
     }
 
 }

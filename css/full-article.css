@@ -979,12 +979,12 @@ footer {
 
 @media screen and (max-width: 450px) {
     footer {
-        background-color: white;
+        background-color: var(--background-color);
         position: fixed;
         bottom: 0;
         width: 100%;
         height: 60px;
-        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
         /* Display */
         display: flex;
         justify-content: space-between;
@@ -1008,10 +1008,11 @@ footer {
     footer>.footer-icon i {
         font-size: 30px;
         /*  border: 1px solid brown;*/
-        color: #0568afe7;
+        color: var(--accent-color);
+        cursor: pointer;
     }
 
-    footer>.footer-icon i:hover {
+    .footer-icon>i:hover {
         cursor: pointer;
         color: #df8a0afb;
         /* color: #000000da;*/
