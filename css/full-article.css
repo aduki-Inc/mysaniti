@@ -918,16 +918,10 @@ footer {
         font-size: 20px;
     }
 
-    .info-action .small-device:hover {
-        background-color: unset;
-        color: #008cff;
-        border: unset;
-    }
-
     #info-mobile {
         /*border: 2px solid brown;
             */
-        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
         position: absolute;
         right: 20px;
         top: 12px;
@@ -938,8 +932,6 @@ footer {
         margin: 0%;
         padding: 3px 5px;
         padding-top: 32px;
-        height: 180px;
-        width: 180px;
         background-color: white;
         border-radius: 5px;
         -webkit-border-radius: 5px;
@@ -953,11 +945,11 @@ footer {
         /*border: 2px solid brown;
             */
         font-size: 1.0em;
-        width: 130px;
+        width: max-content;
         height: max-content;
         margin-left: 10px;
         margin-bottom: 22px;
-        padding: 2px 8px;
+        padding: 3px 10px;
         border-radius: 50px;
         -webkit-border-radius: 50px;
         -moz-border-radius: 50px;
@@ -975,7 +967,7 @@ footer {
         font-weight: bold;
         cursor: pointer;
         float: right;
-        color: rgba(121, 11, 11, 0.527);
+        color: rgba(231, 143, 9, 0.897);
     }
 
     main {
@@ -1036,37 +1028,6 @@ footer {
         display: block;
     }
 
-    .comments-wrapper>.user-info {
-        position: relative;
-    }
-
-    .comment-action {
-        /*border: 1px solid brown;*/
-        box-sizing: border-box;
-        margin-left: 5px;
-        align-self: center;
-        height: max-content;
-        position: absolute;
-        right: 8px;
-        top: 38px;
-    }
-
-    .user-info>.comment-action>i {
-        font-weight: light;
-        display: inline-block;
-        box-sizing: border-box;
-        height: 23px;
-        text-align: center;
-        font-size: 00.9em;
-        padding: 2px 10px;
-        border: 1px solid #55799744;
-    }
-
-    .user-info>.comment-action>i:hover {
-        color: white;
-        background-color: #55799744;
-    }
-
     .info>span {
         display: none;
     }
@@ -1118,10 +1079,4 @@ footer {
         height: max-content;
     }
 
-}
-
-@media screen and (max-width: 380px) {
-    .info-action .small-device {
-        display: none;
-    }
 }
