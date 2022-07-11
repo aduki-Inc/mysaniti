@@ -295,38 +295,41 @@ main {
 
 .sidebar-list {
     margin: 0%;
-    padding: 0%;
     padding-bottom: 15px;
+   /* border: 1px solid #ff002b;*/
+}
+.sidebar-list>.sidebar-list-title{
+   /* border: 1px solid #ff002b;*/
+    margin: 0%;
+    padding: 3px 20px;
+    margin-bottom: 5px;
+    color: #33414d;
+
 }
 
-.sidebar-list>li,
-.sidebar-apps>li {
-    list-style: none;
+.sidebar-list>li {
     box-sizing: border-box;
-    /*  border: 1px solid #ff002b;*/
+    list-style:lower-roman;
+    box-sizing: border-box;
+  /*  border: 1px solid #ff002b;*/
     margin-bottom: 5px;
     padding-left: 10px;
 }
 
 .sidebar-list>.active {
     /*  background-color: #7391af6e;*/
-    background-color: #55799742;
+   /* background-color: #55799742;*/
+   font-weight: bold;
+}
+.sidebar-list>li:hover{
+    font-weight: bold;
 }
 
-.sidebar-list>.active i {
-    color: #008cff;
-}
-
-.sidebar-list>li i:hover {
-    color: #008cff;
-}
-
-.sidebar-list>li a,
-.sidebar-apps>li a {
+.sidebar-list>li a {
     /* border: 1px solid #0051ff;*/
-    color: #33414dc0;
+    color: #33414d;
     box-sizing: border-box;
-    font-size: 17px;
+    font-size: 1.0em;
     text-decoration: none;
     text-align: center;
 }
@@ -339,6 +342,41 @@ main {
     height: 1px;
     color: rgba(3, 68, 59, 0.212);
 }
+.article-stats-list{
+    /*border: 1px solid brown;*/
+    margin: 0%;
+    padding: 0%;
+}
+.article-stats-list>.stats-title{
+   /*  border: 1px solid #ff002b;*/
+     margin: 0%;
+     text-align: center;
+     margin-bottom: 5px;
+     color: #33414d;
+ }
+.article-stats-list>li{
+    list-style: none;
+    /*list-style:inside;*/
+    color: #33414d;
+    font-size: 1.0em;
+    padding: 3px 10px;
+}
+.article-stats-list>li .stat{
+    color: #1f7cce;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0% 3px;
+}
+.article-stats-list>li:last-of-type{
+    list-style: none;
+    margin-top: 10px;
+    text-align: center;
+}
+.article-stats-list>li a{
+    text-decoration: none;
+    color: #194e7c;
+}
+
 .full-content-wrapper{
     border-left: 1px solid rgba(6, 82, 112, 0.233);
     margin: 0%;
