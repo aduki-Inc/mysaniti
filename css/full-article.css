@@ -336,8 +336,16 @@ main {
     text-decoration: none;
     text-align: center;
 }
-
-.sidebar>hr {
+hr {
+    display: block;
+    margin: 0%;
+    padding: 0%;
+    margin-bottom: 10px;
+    size: 1px;
+    height: 1px;
+    color: var(--border-color);
+}
+.sidebar>.hr {
     display: none;
     margin: 0%;
     padding: 0%;
@@ -346,6 +354,7 @@ main {
     height: 1px;
     color: var(--border-color);
 }
+
 .article-stats-list{
     /*border: 1px solid brown;*/
     margin: 0%;
