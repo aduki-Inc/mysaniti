@@ -336,8 +336,8 @@ main {
     text-decoration: none;
     text-align: center;
 }
-hr {
-    display: block;
+.sidebar>hr {
+    display: none;
     margin: 0%;
     padding: 0%;
     margin-bottom: 10px;
@@ -345,8 +345,8 @@ hr {
     height: 1px;
     color: var(--border-color);
 }
-.sidebar>.hr {
-    display: none;
+.profile-dropdown>hr {
+    display: block;
     margin: 0%;
     padding: 0%;
     margin-bottom: 10px;
