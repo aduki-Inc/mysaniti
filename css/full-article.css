@@ -15,6 +15,7 @@ body {
     padding: 0%;
     font-family: 'Product Sans', sans-serif;
     background-color: var(--background-color);
+    background-color: #a4a9ad1c;
 
 }
 
@@ -291,7 +292,7 @@ main {
     padding-right: 20px;
     padding-bottom: 30px;
     height: max-content;
-    /*  border-right: 1px solid rgba(6, 82, 112, 0.233);*/
+    border-right: 1px solid rgba(6, 82, 112, 0.233);
   /*  border-left: 1px solid var(--border-color);*/
     background-color: var(--background-color);
     position: sticky;
